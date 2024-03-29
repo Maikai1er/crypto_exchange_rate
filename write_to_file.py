@@ -11,7 +11,6 @@ def write_to_file(currency):
     try:
         with open(current_date, 'a') as file:
             file.write(f'\n{current_time}: {data}')
-            time.sleep(5)
     except FileNotFoundError:
         print('File not found')
         return
